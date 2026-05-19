@@ -15,7 +15,7 @@
     "email": "email dev --dir src/services/resend/components --port 3001"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.36.5",
+    "@clerk/nextjs": "^7.3.7",
     "@clerk/themes": "^2.4.46",
     "@hookform/resolvers": "^5.2.2",
     "@inngest/agent-kit": "^0.13.2",
