@@ -1,18 +1,10 @@
-import { SignedOut as ClerkSignedOut, SignedIn as ClerkSignedIn } from "@clerk/nextjs";
-import { Suspense } from "react";
+import { Show } from '@clerk/nextjs';
+import React, { Suspense } from "react";
 
 export function SignedOut({ children }: { children: React.ReactNode }) {
-    return (<Suspense>
-        <ClerkSignedOut>
-            {children}
-        </ClerkSignedOut>
-    </Suspense>)
+    return <Suspense><Show when="signed-out">{children}</Show></Suspense>
 }
 
 export function SignedIn({ children }: { children: React.ReactNode }) {
-    return (<Suspense>
-        <ClerkSignedIn>
-            {children}
-        </ClerkSignedIn>
-    </Suspense>)
-} 
+    return <Show when="signed-in">{children}</Show>;
+}
