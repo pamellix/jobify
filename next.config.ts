@@ -22,7 +22,7 @@ const nextConfig: NextConfig = {
                 "default-src 'self'",
                 "script-src 'self' 'unsafe-inline' https://clerk.com https://*.clerk.accounts.dev https://*.clerk.com",
                 "style-src 'self' 'unsafe-inline'",
-                "img-src 'selft' data: https: blob:",
+                "img-src 'self' data: https: blob:",
                 "font-src 'self' data:",
                 "connect-src 'self' https://api.clerk.com https://*.clerk.accounts.dev https://clerk.com https://*.uploadthing.com https://api.inngest.com wss://*.clerk.accounts.dev",
                 "frame-src https://clerk.com https://*.clerk.accounts.dev",
