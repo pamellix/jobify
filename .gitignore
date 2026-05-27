@@ -2,5 +2,6 @@
 /.idea
 /.next
 
-.env
 .vercel
+.env*
+!.env.example
